@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+li{
+    display: inline-block;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+main{
+    background-image: url(../images/pexels-cottonbro-10464468.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+h1{
+    text-align: center;
+}
