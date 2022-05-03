@@ -20,17 +20,12 @@
 
 #### User is able to see the news description and when it was posted.
 
-#### User makes the payment of the sum total.
-
-#### Order is printed to the dispatch.
-
-#### User collects the order from the dispatch.
 
 ## Languages and Frameworks
 
 - Html5
 - Css
-- Javascript
+- flask
 
 ## know Bugs
 
@@ -42,13 +37,11 @@ Contribution to the project are highly welcome.Fork or clone the repo to contrib
 
 ## Setup instructions
 
-SSH:git@github.com:Geb54g/pizzapalace.git
+SSH:git@github.com:Geb54g/newsapi.git
 
-HTTPS:git@github.com:Geb54g/pizzapalace.git
+HTTPS:git@github.com:Geb54g/newsapi.git
 
 ## Live Site
-
-https://geb54g.github.io/pizzapalace/
 
 ## Licence
 
