@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 ul{
     display: flex;
@@ -31,18 +32,39 @@ img{
     padding-top: 1rem;
     padding-bottom: 2rem;
     text-align: center;
+    color: red;
 }
 .submain{
     display: flex;
 }
 .image{
     width: 50%;
+    box-shadow: 10px 10px 10px;
 }
 nav{
     padding-top: 2rem;
     padding-bottom: 2rem;
-    text-decoration: none;
+    box-shadow: 10px 10px 10px;
 }
 .topnews{
-    text-shadow: 7px 7px 7px;
+    text-shadow: 10px 10px 10px;
+}
+a:hover{
+    background-color: white;
+}
+li{
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 8px 5px 8px;
+    text-decoration: none;
+}
+li:hover{
+    background-color: white;
+    box-shadow: 10px 10px 10px;
+}
+.details{
+    text-shadow: 8px 8px 8px;
+}
+img{
+    box-shadow: 10px 10px 10px black;
 }
