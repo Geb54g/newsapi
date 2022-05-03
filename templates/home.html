@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <title>News</title>
   </head>
   <body>
     <nav>
@@ -15,54 +16,60 @@
       </ul>
     </nav>
     <main>
-        <div class="image"></div>
-        <div class="topnews">TOP HEADLINES</div>
-        
-            {%for title,disc,img,p_date,url in contents%}
-            <div class="details">
-              <div>
-                <a href="{{url}}"><img src="{{img}}" alt="" /></a>
-              </div>
-              <div class="subdetails">
-                <div class="subnews">
-                  <a href="{{url}}"><h2>{{title}}</h2></a>
-                </div>
-                <div class="subnews">
-                  <a href="{{url}}"><p>{{desc}}</p></a>
-                </div>
-                <div class="subnews">
-                  <p style="color: green">published Date:-</p>
-                  <p>{{p_date}}</p>
-                </div>
-              </div>
-            </div>
-      
-            {%endfor%}
+      <div class="submain">
+        <img
+          class="image"
+          src="https://images.pexels.com/photos/10464468/pexels-photo-10464468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
 
-        <div class="todays">TO DAY'S NEWS </div>
-        {%for title,disc,img,p_date,url in all%}
-            <div class="details">
-              <div>
-                <a href="{{url}}"><img src="{{img}}" alt="" /></a>
-              </div>
-              <div class="subdetails">
-                <div class="subnews">
-                  <a href="{{url}}"><h2>{{title}}</h2></a>
-                </div>
-                <div class="subnews">
-                  <a href="{{url}}"><p>{{desc}}</p></a>
-                </div>
-                <div class="subnews">
-                  <p style="color: green">published Date:-</p>
-                  <p>{{p_date}}</p>
-                </div>
-              </div>
-            </div>
-      
-            {%endfor%}
+          alt=""<span><img src="https://www.universaltvsomali.net/infusions/media/uploads/inline-images/14987513419717e.jpg" alt=""></span>
+        />
+      </div>
 
-        
+      <div class="image"></div>
+      <div class="topnews">TOP HEADLINES</div>
+
+      {%for title,disc,img,p_date,url in contents%}
+      <div class="details">
+        <div class="brief">
+          <a href="{{url}}"><img src="{{img}}" alt="" /></a>
+        </div>
+        <div class="subdetails">
+          <div class="subnews">
+            <a href="{{url}}"><h2>{{title}}</h2></a>
+          </div>
+          <div class="subnews">
+            <a href="{{url}}"><p>{{desc}}</p></a>
+          </div>
+          <div class="subnews">
+            <p style="color: green">published Date:-</p>
+            <p>{{p_date}}</p>
+          </div>
+        </div>
+      </div>
+
+      {%endfor%}
+
+      <div class="todays">TO DAY'S NEWS</div>
+      {%for title,disc,img,p_date,url in all%}
+      <div class="details">
+        <div>
+          <a href="{{url}}"><img src="{{img}}" alt="" /></a>
+        </div>
+        <div class="subdetails">
+          <div class="subnews">
+            <a href="{{url}}"><h2>{{title}}</h2></a>
+          </div>
+          <div class="subnews">
+            <a href="{{url}}"><p>{{desc}}</p></a>
+          </div>
+          <div class="subnews">
+            <p style="color: green">published Date:-</p>
+            <p>{{p_date}}</p>
+          </div>
+        </div>
+      </div>
+
+      {%endfor%}
     </main>
-    
   </body>
 </html>
