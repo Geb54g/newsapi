@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href=""></a>Home</li>
+        <li><a href=""></a>News</li>
+        <li><a href=""></a>Blog</li>
+      </ul>
+    </nav>
+    <main>
+        <div class="image"></div>
+        <div class="topnews">TOP HEADLINES</div>
+        
+            {%for title,disc,img,p_date,url in contents%}
+            <div class="details">
+              <div>
+                <a href="{{url}}"><img src="{{img}}" alt="" /></a>
+              </div>
+              <div class="subdetails">
+                <div class="subnews">
+                  <a href="{{url}}"><h2>{{title}}</h2></a>
+                </div>
+                <div class="subnews">
+                  <a href="{{url}}"><p>{{desc}}</p></a>
+                </div>
+                <div class="subnews">
+                  <p style="color: green">published Date:-</p>
+                  <p>{{p_date}}</p>
+                </div>
+              </div>
+            </div>
+      
+            {%endfor%}
+
+        <div class="todays">TO DAY'S NEWS </div>
+        {%for title,disc,img,p_date,url in all%}
+            <div class="details">
+              <div>
+                <a href="{{url}}"><img src="{{img}}" alt="" /></a>
+              </div>
+              <div class="subdetails">
+                <div class="subnews">
+                  <a href="{{url}}"><h2>{{title}}</h2></a>
+                </div>
+                <div class="subnews">
+                  <a href="{{url}}"><p>{{desc}}</p></a>
+                </div>
+                <div class="subnews">
+                  <p style="color: green">published Date:-</p>
+                  <p>{{p_date}}</p>
+                </div>
+              </div>
+            </div>
+      
+            {%endfor%}
+
+        
+    </main>
+    
+  </body>
+</html>
