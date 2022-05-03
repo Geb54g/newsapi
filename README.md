@@ -25,7 +25,7 @@
 
 - Html5
 - Css
-- flask
+- python
 
 ## know Bugs
 

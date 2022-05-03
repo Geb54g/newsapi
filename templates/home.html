@@ -15,32 +15,30 @@
         <li><a href=""></a>Blog</li>
       </ul>
     </nav>
+    <div class="submain">
+      <img
+        class="image"
+        src="https://images.pexels.com/photos/10464468/pexels-photo-10464468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+
+        alt=""<span><img class="image" src="https://www.universaltvsomali.net/infusions/media/uploads/inline-images/14987513419717e.jpg" alt=""></span>
+      />
+    </div>
     <main>
-      <div class="submain">
-        <img
-          class="image"
-          src="https://images.pexels.com/photos/10464468/pexels-photo-10464468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-
-          alt=""<span><img src="https://www.universaltvsomali.net/infusions/media/uploads/inline-images/14987513419717e.jpg" alt=""></span>
-        />
-      </div>
-
-      <div class="image"></div>
       <div class="topnews">TOP HEADLINES</div>
-
-      {%for title,disc,img,p_date,url in contents%}
+      <section class="one">
+        {%for title,disc,img,p_date,url in contents%}
       <div class="details">
-        <div class="brief">
+        <div class="actual">
           <a href="{{url}}"><img src="{{img}}" alt="" /></a>
         </div>
         <div class="subdetails">
-          <div class="subnews">
+          <div class="actual">
             <a href="{{url}}"><h2>{{title}}</h2></a>
           </div>
-          <div class="subnews">
+          <div class="actual">
             <a href="{{url}}"><p>{{desc}}</p></a>
           </div>
-          <div class="subnews">
+          <div class="actual">
             <p style="color: green">published Date:-</p>
             <p>{{p_date}}</p>
           </div>
@@ -48,21 +46,22 @@
       </div>
 
       {%endfor%}
-
-      <div class="todays">TO DAY'S NEWS</div>
-      {%for title,disc,img,p_date,url in all%}
+      <div class="topnews">TO DAY'S TOP STORIES</div>
+      </section>
+      <section class="two">
+        {%for title,disc,img,p_date,url in all%}
       <div class="details">
         <div>
           <a href="{{url}}"><img src="{{img}}" alt="" /></a>
         </div>
         <div class="subdetails">
-          <div class="subnews">
+          <div class="actual">
             <a href="{{url}}"><h2>{{title}}</h2></a>
           </div>
-          <div class="subnews">
+          <div class="actual">
             <a href="{{url}}"><p>{{desc}}</p></a>
           </div>
-          <div class="subnews">
+          <div class="actual">
             <p style="color: green">published Date:-</p>
             <p>{{p_date}}</p>
           </div>
@@ -70,6 +69,8 @@
       </div>
 
       {%endfor%}
+
+      </section>
     </main>
   </body>
 </html>

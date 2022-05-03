@@ -13,8 +13,36 @@ nav{
     background-color: red;
 }
 img{
-    width: 50%;
+    width: 80%;
+}
+.one{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.two{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.topnews{
+    padding-left: 1rem;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.submain{
+    display: flex;
 }
 .image{
     width: 50%;
+}
+nav{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+}
+.topnews{
+    text-shadow: 7px 7px 7px;
 }
