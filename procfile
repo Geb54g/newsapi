@@ -1,1 +1,1 @@
-web:gunicorn NEWSAPP:
+web:gunicorn app:app

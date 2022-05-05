@@ -7,8 +7,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    api_key ="8fef44d4c9bd4e70b5c1360222846157"
     
-    newsapi = NewsApiClient(api_key ="8fef44d4c9bd4e70b5c1360222846157")
+    newsapi = NewsApiClient(api_key = api_key)
     
     top_headlines = newsapi.get_top_headlines(sources='bbc-news')
     
