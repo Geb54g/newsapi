@@ -11,6 +11,8 @@ def home():
     
     newsapi = NewsApiClient(api_key = api_key)
     
+    
+    
     top_headlines = newsapi.get_top_headlines(sources='bbc-news')
     
     all_articles = newsapi.get_everything(sources='bbc-news')
