@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 
-
 from newsapi import NewsApiClient
 
 app = Flask(__name__)
@@ -8,10 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     api_key ="8fef44d4c9bd4e70b5c1360222846157"
-    
     newsapi = NewsApiClient(api_key = api_key)
-    
-    
     
     top_headlines = newsapi.get_top_headlines(sources='bbc-news')
     
@@ -30,7 +26,6 @@ def home():
     
     for i in range(len(t_articles)):
         main_article = t_articles[i]
-        
         
         news.append(main_article['title'])
         desc.append(main_article['description'])
